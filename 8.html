@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Registration</title>
+</head>
+<body>
+    <h1 style="text-align: center; color: brown;">Online Course Registration Form</h1>
+    <form action="basic.html" method="post">
+        <fieldset>
+            <legend>
+                LOGIN FORM
+            </legend>
+      
+        <h2>Personal Information</h2>
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name" required><br>
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+        
+        <h2>Course Details</h2>
+        <label for="course_title">Course Title:</label>
+        <input type="text" id="course_title" name="course_title" required><br>
+        
+        <label for="course_code">Course Code:</label>
+        <input type="text" id="course_code" name="course_code" required><br>
+        
+        <label for="start_date">Preferred Start Date:</label>
+        <input type="date" id="start_date" name="start_date" required><br>
+        
+        <h2>Payment Information</h2>
+        <label for="payment_method">Payment Method:</label>
+        <select id="payment_method" name="payment_method" required>
+            <option value="credit_card">Credit Card</option>
+            <option value="bank_transfer">Bank Transfer</option>
+        </select><br>
+        
+        <label for="card_number">Card Number:</label>
+        <input type="text" id="card_number" name="card_number" required><br>
+
+        
+        <label for="billing_address">Billing Address:</label>
+        <textarea id="billing_address" name="billing_address" rows="4" required></textarea><br>
+        
+      
+        
+        <label><input type="checkbox" name="terms_conditions" required></label><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</fieldset>
+</body>
+</html>
