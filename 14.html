@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  canvas {
+    border: 1px solid black;
+  }
+</style>
+<title>Canvas Drawing Example</title>
+</head>
+<body>
+  <h1>Canvas Drawing Example</h1>
+  <canvas id="myCanvas" width="400" height="300"></canvas>
+
+  <script>
+    const canvas = document.getElementById("myCanvas");
+    const context = canvas.getContext("2d");
+
+    
+    context.beginPath();
+    context.ellipse(200, 150, 70, 40, 0, 0, Math.PI * 2);
+    context.fillStyle = "blue";
+    context.fill();
+    context.closePath();
+
+
+    context.beginPath();
+    context.moveTo(300, 50);
+    context.lineTo(200, 250);
+    context.strokeStyle = "green";
+    context.lineWidth = 3;
+    context.stroke();
+    context.closePath();
+
+  </script>
+</body>
+</html>
